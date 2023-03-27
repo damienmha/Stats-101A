@@ -1,0 +1,64 @@
+---
+title: "Stats 101A Homework 1 Problem 3"
+author: "Damien Ha"
+date: "01/13/2023"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 3
+  html_document:
+    toc: yes
+    toc_depth: '3'
+    df_print: paged
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+    toc: yes
+    toc_depth: 3
+---
+
+# Loading Data
+```{r}
+heart <- read.csv("Heart.csv")
+heart = subset(heart, select = -c(X) )
+```
+
+# Part 1
+Conduct simple linear regression using MaxHR as outcome variable and 
+Chol as a predictor.
+
+- Report the summary of your linear model, i.e. write a regression 
+equation. 
+
+- Interpret the slope and the y-intercept in the context of data. 
+```{r}
+model <- lm(MaxHR ~ Chol, data = heart)
+summary(model)
+```
+The slope is -0.0015 and the intercept is 149.98. For an increase of 1 unit in cholesterol, we espect a decrease of 0.0015 units in MaxHR on average. At a cholesterol level of 0, we expect a MaxHR of 149.98 on average.
+
+# Part 2
+Create a scatter plot for the Chol vs MaxHR then plot the least square 
+regression line on the same graph
+```{r}
+plot(heart$Chol, heart$MaxHR, 
+     xlab = "Cholesterol", ylab = "MaxHR", main = "Chol vs MaxHR", 
+     pch = 19, col = 4)
+abline(model, col = 2)
+```
+
+# Part 3
+Report R-square and create a residual plot. How do you assess the 
+goodness-of-fit of the model?
+```{r}
+summary(model)$r.squared
+plot(heart$Chol, model$residuals,
+     xlab = "Chol", ylab = "residuals", main = "Residual Plot",
+     pch = 19, col = 6)
+abline(0,0)
+```
+
+From the low R-squared value, it seems that MaxHR is not explained very much by the linear model. The residual plot does seem to be random without any patterns, but the data points in the scatterplot are not clustered very closely to the line. The model does not have a very good fit.
+
+
+

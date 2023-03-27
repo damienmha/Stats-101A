@@ -1,0 +1,173 @@
+---
+title: "Stats 101A Homework #5"
+author: "Damien Ha"
+date: "2023-03-03"
+output: pdf_document
+---
+
+
+# Problem 1
+6.7.3
+
+
+```{r}
+cars <- read.csv("cars04.csv")
+```
+
+## Part A
+```{r}
+m1 <- lm(SuggestedRetailPrice ~ EngineSize + Cylinders + Horsepower + HighwayMPG +  
+     Weight + WheelBase + Hybrid, data = cars)
+
+summary(m1)
+
+par(mfrow = c(2,2))
+plot(m1)
+
+plot(cars[, c(5:7, 9:11, 2)])
+```
+
+From the adjusted $R^2$ value, it may appear at a glance that the model could be reasonable. However, there do appear to be some model violations. The data does not look to be completely normal and some leverage points might be influencing the model.
+
+## Part B
+
+If the plot of the residuals against fitted values produces a curved pattern, the model may not be a good fit to the data. It may suggest that the relationship is not strictly linear.
+
+## Part C
+
+Based on Cook's distance from our diagnostic plot, point 223 looks like a bad leverage point.
+
+## Part D
+```{r}
+m2 <- lm(log(SuggestedRetailPrice) ~ I(EngineSize^(0.25)) + I(log(Cylinders)) + I(log(Horsepower)) + I(1/HighwayMPG) + Weight + I(log(WheelBase)) + Hybrid, cars)
+summary(m2)
+
+par(mfrow=c(2,2))
+plot(m2)
+```
+
+This transformed model looks to be an improvement. The residual plots now don't have much of a pattern and the greater linearity in the qq plot suggests a more normal distribution. The adjusted $R^2$ value is at a good level. There still seem to be some noticeable leverage points, but the model is overall better.
+
+## Part E
+```{r}
+m3 <- update(m2, . ~ . - I(1/HighwayMPG) - I(log(WheelBase)))
+summary(m3)
+```
+
+The F-statistic implies a greater significance in this case
+
+## Part F
+
+Manufacturer is a quantitative variable, so in order to observe its effect on prices you'd have to create a dummy variable where it is represented as a numerical value.
+
+# Problem 2
+6.7.5
+```{r}
+library(car)
+pgatour <- read.csv("pgatour2006.csv")
+
+m4 <- lm(PrizeMoney ~ DrivingAccuracy + GIR + PuttingAverage + BirdieConversion + SandSaves + Scrambling + PuttsPerRound, pgatour)
+summary(m4)
+
+par(mfrow=c(2,2))
+plot(m4)
+
+pgatour2 <- subset(pgatour, select=c('PrizeMoney','DrivingAccuracy','GIR','PuttingAverage','BirdieConversion', 
+                                     'SandSaves', 'Scrambling', 'PuttsPerRound'))
+plot(pgatour2)
+```
+
+## Part A
+```{r}
+m4_log <- lm(log(PrizeMoney) ~ ., pgatour2)
+summary(m4_log)
+
+par(mfrow=c(2,2))
+plot(m4_log)
+```
+
+I agree. This transformation does appear to make the data better fitted to a linear regression model. The qq plot becomes more linear suggesting more normality and the residuals vs fitted values is not as much of a curve but more of a random scatter. This shows the transformed model better aligns with the assumptions of linear regression.
+
+## Part B
+
+This can be seen above in part A. The better choice of full model is the second one where Y is log transformed for the reasons listed in part A. A scatterplot and 4 diagnostic plots can be seen there as well.
+
+## Part C
+
+Based on our diagnostic plots, we may want to investigate point 185. It may be an outlier or leverage point.
+
+## Part D
+
+There may be outlying values, like point 185 listed above, that need further investigation as they may skew our data. Also while the qqplot is fairly linear, it has some non-linear sections suggesting that the normality may not be perfect.
+
+## Part E
+
+Changing or removing one variable can affect the statistical significance of other variable(s). We should not remove any variables because we might suddenly make one of the other insignificant variables significant.
+
+
+
+# Problem 3
+7.5.2
+```{r}
+haldcement <- read.table("Haldcement.txt", header = T)
+head(haldcement)
+```
+
+## Part A
+```{r}
+m5 <- lm(Y ~ x4, haldcement)
+m6 <- lm(Y ~ x1 + x2, haldcement)
+m7 <- lm(Y ~ x1 + x2 + x4, haldcement)
+m8 <- lm(Y ~ x1 + x2 + x3 + x4, haldcement)
+sum5 <- summary(m5)
+sum6 <- summary(m6)
+sum7 <- summary(m7)
+sum8 <- summary(m8)
+
+adjr2 <- c(sum5$adj.r.squared, sum6$adj.r.squared, sum7$adj.r.squared, sum8$adj.r.squared)
+x <- seq(1,4,by=1)
+plot(adjr2 ~ x, xlab = "Subset Size", ylab = "Statistic: adjr2")
+
+Predictors <- c("X4", "X1, X2", "X1, X2, X4", "X1, X2, X3, X4")
+AIC_col <- c(AIC(m5, k=2), AIC(m6, k=2), AIC(m7, k=2), AIC(m8, k=2))
+BIC_col <- c(AIC(m5, k=log(nrow(haldcement))), AIC(m6, k=log(nrow(haldcement))), AIC(m7, k=log(nrow(haldcement))), AIC(m8, k=log(nrow(haldcement))))
+
+allsubsets <- cbind(x, Predictors, adjr2, AIC_col, BIC_col)
+allsubsets
+```
+
+Subset of 2 or 3 would be reasonable
+
+## Part B
+```{r}
+attach(haldcement)
+
+m9 <- step(lm(Y ~ 1), Y ~ x1 + x2 + x3 + x4, direction="forward")
+m9
+
+m10 <- step(lm(Y ~ 1), Y ~ x1 + x2 + x3 + x4, direction="forward", k = log(nrow(haldcement)))
+m10
+```
+
+The model with 3 predictors seems to work best
+
+## Part C
+```{r}
+m11 <- step(lm(Y ~ x1 + x2 + x3 + x4), Y ~ x1 + x2 + x3 + x4, direction="backward")
+m11
+
+m12 <- step(lm(Y ~ x1 + x2 + x3 + x4), Y ~ x1 + x2 + x3 + x4, direction="backward", k = log(nrow(haldcement)))
+m12
+```
+
+## Part D
+
+These models all select variables differently. The first one from part A involves fitting all possible combinations of predictor variables, from one variable to all variables, and selecting the model that has the lowest AIC or BIC. The second one from part B involves starting with a null model and then adding one predictor variable at a time until the addition of another variable no longer improves the AIC or BIC. Finally, the final one from part C is the reverse of the forward selection approach. It starts with a model that includes all predictor variables and then removes one variable at a time until removing another variable does not improve the AIC or BIC.
+
+## Part E
+
+The 2 or 3 predictor model would be best
+
+
+
+

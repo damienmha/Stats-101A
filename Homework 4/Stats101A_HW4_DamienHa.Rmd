@@ -1,0 +1,120 @@
+---
+title: 'Stats 101A Homework #4'
+author: "Damien Ha"
+date: "2023-02-24"
+output: 
+  pdf_document:
+    toc: true
+    toc_depth: 3
+---
+
+
+# Problem 1
+## Loading Data
+
+```{r}
+papercompany <- read.table("papercompany.txt", header = T)
+```
+
+
+## Part A
+```{r}
+cor(papercompany)
+```
+\pagebreak
+```{r}
+pairs(papercompany, main = "Scatterplot Matrix of papercompany data", col = "turquoise", pch = 20)
+```
+
+All pairings of variables seem to have a strong, positive linear relationship with correlation coefficients close to positive 1. Certain pairs appear to have some odd trends or possible outliers, such as the points branching off and forming a curve in labor vs overhead. Overall each variable seems to have a positive trend.
+
+## Part B
+```{r}
+model <- lm(papercompany$COST ~ papercompany$PAPER + papercompany$MACHINE +  
+             papercompany$OVERHEAD + papercompany$LABOR)
+summary(model)
+```
+
+The regression equation is $Y = 51.72314 + 0.94794X_1 + 2.47104X_2 + 0.04834X_3 - 0.05058X_4$ where $Y$ is cost and $X_1, X_2, X_3,$ and $X_4$ are paper, machine, overhead, and labor respectively
+
+## Part C
+```{r}
+anova(model)
+```
+
+Paper has F = 18388.2129 with p = $2.2 \cdot 10^{-16}$ and machine has F = 126.8547 with p = $1.33 \cdot 10^{-10}$ suggesting that at $\alpha = 0.05$, these variables help better fit the model to the data. However, overhead has a p-value if 0.8711 and labor has a p-value of 0.2226, which, if we consider at the level $\alpha = 0.05$, may suggest these variables aren't significant
+
+## Part D
+From out linear model summary, we can see the $R^2$ value is 0.998, so 99.8% of the variation in cost is explained by the regression model  
+
+## Part E
+```{r}
+# R-squared for
+# cost vs paper
+summary(lm(papercompany$COST ~ papercompany$PAPER))[[9]]
+summary(lm(papercompany$COST ~ papercompany$PAPER + papercompany$MACHINE +   
+             papercompany$OVERHEAD + papercompany$LABOR))[[4]][[2]]
+
+# cost vs machine
+summary(lm(papercompany$COST ~ papercompany$MACHINE))[[9]]
+summary(lm(papercompany$COST ~ papercompany$PAPER + papercompany$MACHINE +   
+             papercompany$OVERHEAD + papercompany$LABOR))[[4]][[3]]
+
+# cost vs overhead
+summary(lm(papercompany$COST ~ papercompany$OVERHEAD))[[9]]
+summary(lm(papercompany$COST ~ papercompany$PAPER + papercompany$MACHINE +   
+             papercompany$OVERHEAD + papercompany$LABOR))[[4]][[4]]
+
+# cost vs labor
+summary(lm(papercompany$COST ~ papercompany$LABOR))[[9]]
+summary(lm(papercompany$COST ~ papercompany$PAPER + papercompany$MACHINE +   
+             papercompany$OVERHEAD + papercompany$LABOR))[[4]][[5]]
+```
+
+
+## Part F
+```{r}
+reduced <- lm(papercompany$COST ~ papercompany$PAPER + papercompany$MACHINE)
+anova(reduced, model)
+```
+F = 0.8 and p = 0.4615 so at $\alpha = 0.05$ we fail to reject the null hypothesis and say overhead and labor don't contribute significant information to cost when considering paper and machine variables
+
+# Question 2
+## Loading Data
+```{r}
+latour <- read.table("Latour.txt", header = T)
+```
+
+
+## Part A
+```{r}
+summary(lm(Quality ~ EndofHarvest + Rain + Rain:EndofHarvest, data = latour))
+```
+The interaction term has a p-value of 0.012 which, at $\alpha = 0.05$ is significant, suggesting the rate of change in quality rating depends on whether there has been any unwanted rain at vintage.
+
+## Part B
+
+### Part I
+
+From the equation, letting $Y$ = quality, $X_1$ =  end of harvest days, and $X_2$ = rain, we have $Y = 5.1622 - 0.03145 X_1 + 1.7867 X_2 - 0.08314 X_1 X_2$ 
+
+Setting $X_2$ = 0, we have $Y = 5.16122 - 0.03145 X_1$ 
+
+The derivative of the equation with respect to $X_1$ is -0.03145, and we want to find a quality drop of 1:
+```{r}
+paste0("The number of days for a decrease in quality by 1 without rain is ", -1/-0.03145)
+```
+
+### Part II
+
+Set $X_2$ = 1
+
+$Y = 6.94792 - 0.11459 X_1$
+
+The derivative with respect to $X_1$ is -0.11459, and we want to find a quality drop of 1
+```{r}
+paste0("The number of days for a decrease in quality by 1 with rain is ", -1/-0.11459)
+```
+
+
+

@@ -1,0 +1,303 @@
+patientnum,age,gender,chestpain,resting BP,cholesterol,fastingbldsug,restcardio,maxheartrate,exand,oldpeak,exerslope,colvessels,thal,diagnosis
+1,67,male,asymptomatic,160,286,<120,abnormal 2,108,exercise indicued angina,1.5,flat,3,normal,NA
+2,67,male,asymptomatic,120,229,<120,abnormal 2,129,exercise indicued angina,2.6,flat,2,reversible defect,>50% narrowing
+3,37,male,nonanginal pain,130,250,<120,nomral,187,no exercise indicued angina,3.5,downslope,0,normal,<50% narrowing
+4,41,female,atypical angina,130,204,<120,abnormal 2,172,no exercise indicued angina,1.4,upslope,0,normal,<50% narrowing
+5,56,male,atypical angina,120,236,<120,nomral,178,no exercise indicued angina,0.8,upslope,0,normal,<50% narrowing
+6,62,female,asymptomatic,140,268,<120,abnormal 2,160,no exercise indicued angina,3.6,downslope,2,normal,NA
+7,57,female,asymptomatic,120,354,<120,nomral,163,exercise indicued angina,0.6,upslope,0,normal,<50% narrowing
+8,63,male,asymptomatic,130,254,<120,abnormal 2,147,no exercise indicued angina,1.4,flat,1,reversible defect,NA
+9,53,male,asymptomatic,140,203,>120,abnormal 2,155,exercise indicued angina,3.1,downslope,0,reversible defect,>50% narrowing
+10,57,male,asymptomatic,140,192,<120,nomral,148,no exercise indicued angina,0.4,flat,0,fixed defect,<50% narrowing
+11,56,female,atypical angina,140,294,<120,abnormal 2,153,no exercise indicued angina,1.3,flat,0,normal,<50% narrowing
+12,56,male,nonanginal pain,130,256,>120,abnormal 2,142,exercise indicued angina,0.6,flat,1,fixed defect,NA
+13,44,male,atypical angina,120,263,<120,nomral,173,no exercise indicued angina,0,upslope,0,reversible defect,<50% narrowing
+14,52,male,nonanginal pain,172,199,>120,nomral,162,no exercise indicued angina,0.5,upslope,0,reversible defect,<50% narrowing
+15,57,male,nonanginal pain,150,168,<120,nomral,174,no exercise indicued angina,1.6,upslope,0,normal,<50% narrowing
+16,48,male,atypical angina,110,229,<120,nomral,168,no exercise indicued angina,1,downslope,0,reversible defect,>50% narrowing
+17,54,male,asymptomatic,140,239,<120,nomral,160,no exercise indicued angina,1.2,upslope,0,normal,<50% narrowing
+18,48,female,nonanginal pain,130,275,<120,nomral,139,no exercise indicued angina,0.2,upslope,0,normal,<50% narrowing
+19,49,male,atypical angina,130,266,<120,nomral,171,no exercise indicued angina,0.6,upslope,0,normal,<50% narrowing
+20,64,male,typical angina,110,211,<120,abnormal 2,144,exercise indicued angina,1.8,flat,0,normal,<50% narrowing
+21,58,female,typical angina,150,283,>120,abnormal 2,162,no exercise indicued angina,1,upslope,0,normal,<50% narrowing
+22,58,male,atypical angina,120,284,<120,abnormal 2,160,no exercise indicued angina,1.8,flat,0,normal,>50% narrowing
+23,58,male,nonanginal pain,132,224,<120,abnormal 2,173,no exercise indicued angina,3.2,upslope,2,reversible defect,NA
+24,60,male,asymptomatic,130,206,<120,abnormal 2,132,exercise indicued angina,2.4,flat,2,reversible defect,NA
+25,50,female,nonanginal pain,120,219,<120,nomral,158,no exercise indicued angina,1.6,flat,0,normal,<50% narrowing
+26,58,female,nonanginal pain,120,340,<120,nomral,172,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+27,66,female,typical angina,150,226,<120,nomral,114,no exercise indicued angina,2.6,downslope,0,normal,<50% narrowing
+28,43,male,asymptomatic,150,247,<120,nomral,171,no exercise indicued angina,1.5,upslope,0,normal,<50% narrowing
+29,40,male,asymptomatic,110,167,<120,abnormal 2,114,exercise indicued angina,2,flat,0,reversible defect,NA
+30,69,female,typical angina,140,239,<120,nomral,151,no exercise indicued angina,1.8,upslope,2,normal,<50% narrowing
+31,60,male,asymptomatic,117,230,>120,nomral,160,exercise indicued angina,1.4,upslope,2,reversible defect,NA
+32,64,male,nonanginal pain,140,335,<120,nomral,158,no exercise indicued angina,0,upslope,0,normal,>50% narrowing
+33,59,male,asymptomatic,135,234,<120,nomral,161,no exercise indicued angina,0.5,flat,0,reversible defect,<50% narrowing
+34,44,male,nonanginal pain,130,233,<120,nomral,179,exercise indicued angina,0.4,upslope,0,normal,<50% narrowing
+35,42,male,asymptomatic,140,226,<120,nomral,178,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+36,43,male,asymptomatic,120,177,<120,abnormal 2,120,exercise indicued angina,2.5,flat,0,reversible defect,NA
+37,57,male,asymptomatic,150,276,<120,abnormal 2,112,exercise indicued angina,0.6,flat,1,fixed defect,>50% narrowing
+38,55,male,asymptomatic,132,353,<120,nomral,132,exercise indicued angina,1.2,flat,1,reversible defect,NA
+39,61,male,nonanginal pain,150,243,>120,nomral,137,exercise indicued angina,1,flat,0,normal,<50% narrowing
+40,65,female,asymptomatic,150,225,<120,abnormal 2,114,no exercise indicued angina,1,flat,3,reversible defect,NA
+41,40,male,typical angina,140,199,<120,nomral,178,exercise indicued angina,1.4,upslope,0,reversible defect,<50% narrowing
+42,71,female,atypical angina,160,302,<120,nomral,162,no exercise indicued angina,0.4,upslope,2,normal,<50% narrowing
+43,59,male,nonanginal pain,150,212,>120,nomral,157,no exercise indicued angina,1.6,upslope,0,normal,<50% narrowing
+44,61,female,asymptomatic,130,330,<120,abnormal 2,169,no exercise indicued angina,0,upslope,0,normal,>50% narrowing
+45,58,male,nonanginal pain,112,230,<120,abnormal 2,165,no exercise indicued angina,2.5,flat,1,reversible defect,NA
+46,51,male,nonanginal pain,110,175,<120,nomral,123,no exercise indicued angina,0.6,upslope,0,normal,<50% narrowing
+47,50,male,asymptomatic,150,243,<120,abnormal 2,128,no exercise indicued angina,2.6,flat,0,reversible defect,NA
+48,65,female,nonanginal pain,140,417,>120,abnormal 2,157,no exercise indicued angina,0.8,upslope,1,normal,<50% narrowing
+49,53,male,nonanginal pain,130,197,>120,abnormal 2,152,no exercise indicued angina,1.2,downslope,0,normal,<50% narrowing
+50,41,female,atypical angina,105,198,<120,nomral,168,no exercise indicued angina,0,upslope,1,normal,<50% narrowing
+51,65,male,asymptomatic,120,177,<120,nomral,140,no exercise indicued angina,0.4,upslope,0,reversible defect,<50% narrowing
+52,44,male,asymptomatic,112,290,<120,abnormal 2,153,no exercise indicued angina,0,upslope,1,normal,NA
+53,44,male,atypical angina,130,219,<120,abnormal 2,188,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+54,60,male,asymptomatic,130,253,<120,nomral,144,exercise indicued angina,1.4,upslope,1,reversible defect,>50% narrowing
+55,54,male,asymptomatic,124,266,<120,abnormal 2,109,exercise indicued angina,2.2,flat,1,reversible defect,>50% narrowing
+56,50,male,nonanginal pain,140,233,<120,nomral,163,no exercise indicued angina,0.6,flat,1,reversible defect,>50% narrowing
+57,41,male,asymptomatic,110,172,<120,abnormal 2,158,no exercise indicued angina,0,upslope,0,reversible defect,>50% narrowing
+58,54,male,nonanginal pain,125,273,<120,abnormal 2,152,no exercise indicued angina,0.5,downslope,1,normal,<50% narrowing
+59,51,male,typical angina,125,213,<120,abnormal 2,125,exercise indicued angina,1.4,upslope,1,normal,<50% narrowing
+60,51,female,asymptomatic,130,305,<120,nomral,142,exercise indicued angina,1.2,flat,0,reversible defect,NA
+61,46,female,nonanginal pain,142,177,<120,abnormal 2,160,exercise indicued angina,1.4,downslope,0,normal,<50% narrowing
+62,58,male,asymptomatic,128,216,<120,abnormal 2,131,exercise indicued angina,2.2,flat,3,reversible defect,>50% narrowing
+63,54,female,nonanginal pain,135,304,>120,nomral,170,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+64,54,male,asymptomatic,120,188,<120,nomral,113,no exercise indicued angina,1.4,flat,1,reversible defect,NA
+65,60,male,asymptomatic,145,282,<120,abnormal 2,142,exercise indicued angina,2.8,flat,2,reversible defect,NA
+66,60,male,nonanginal pain,140,185,<120,abnormal 2,155,no exercise indicued angina,3,flat,0,normal,>50% narrowing
+67,54,male,nonanginal pain,150,232,<120,abnormal 2,165,no exercise indicued angina,1.6,upslope,0,reversible defect,<50% narrowing
+68,59,male,asymptomatic,170,326,<120,abnormal 2,140,exercise indicued angina,3.4,downslope,0,reversible defect,NA
+69,46,male,nonanginal pain,150,231,<120,nomral,147,no exercise indicued angina,3.6,flat,0,normal,>50% narrowing
+70,65,female,nonanginal pain,155,269,<120,nomral,148,no exercise indicued angina,0.8,upslope,0,normal,<50% narrowing
+71,67,male,asymptomatic,125,254,>120,nomral,163,no exercise indicued angina,0.2,flat,2,reversible defect,NA
+72,62,male,asymptomatic,120,267,<120,nomral,99,exercise indicued angina,1.8,flat,2,reversible defect,>50% narrowing
+73,65,male,asymptomatic,110,248,<120,abnormal 2,158,no exercise indicued angina,0.6,upslope,2,fixed defect,>50% narrowing
+74,44,male,asymptomatic,110,197,<120,abnormal 2,177,no exercise indicued angina,0,upslope,1,normal,>50% narrowing
+75,65,female,nonanginal pain,160,360,<120,abnormal 2,151,no exercise indicued angina,0.8,upslope,0,normal,<50% narrowing
+76,60,male,asymptomatic,125,258,<120,abnormal 2,141,exercise indicued angina,2.8,flat,1,reversible defect,>50% narrowing
+77,51,female,nonanginal pain,140,308,<120,abnormal 2,142,no exercise indicued angina,1.5,upslope,1,normal,<50% narrowing
+78,48,male,atypical angina,130,245,<120,abnormal 2,180,no exercise indicued angina,0.2,flat,0,normal,<50% narrowing
+79,58,male,asymptomatic,150,270,<120,abnormal 2,111,exercise indicued angina,0.8,upslope,0,reversible defect,NA
+80,45,male,asymptomatic,104,208,<120,abnormal 2,148,exercise indicued angina,3,flat,0,normal,<50% narrowing
+81,53,female,asymptomatic,130,264,<120,abnormal 2,143,no exercise indicued angina,0.4,flat,0,normal,<50% narrowing
+82,39,male,nonanginal pain,140,321,<120,abnormal 2,182,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+83,68,male,nonanginal pain,180,274,>120,abnormal 2,150,exercise indicued angina,1.6,flat,0,reversible defect,NA
+84,52,male,atypical angina,120,325,<120,nomral,172,no exercise indicued angina,0.2,upslope,0,normal,<50% narrowing
+85,44,male,nonanginal pain,140,235,<120,abnormal 2,180,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+86,47,male,nonanginal pain,138,257,<120,abnormal 2,156,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+87,53,female,nonanginal pain,128,216,<120,abnormal 2,115,no exercise indicued angina,0,upslope,0,?,<50% narrowing
+88,53,female,asymptomatic,138,234,<120,abnormal 2,160,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+89,51,female,nonanginal pain,130,256,<120,abnormal 2,149,no exercise indicued angina,0.5,upslope,0,normal,<50% narrowing
+90,66,male,asymptomatic,120,302,<120,abnormal 2,151,no exercise indicued angina,0.4,flat,0,normal,<50% narrowing
+91,62,female,asymptomatic,160,164,<120,abnormal 2,145,no exercise indicued angina,6.2,downslope,3,reversible defect,NA
+92,62,male,nonanginal pain,130,231,<120,nomral,146,no exercise indicued angina,1.8,flat,3,reversible defect,<50% narrowing
+93,44,female,nonanginal pain,108,141,<120,nomral,175,no exercise indicued angina,0.6,flat,0,normal,<50% narrowing
+94,63,female,nonanginal pain,135,252,<120,abnormal 2,172,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+95,52,male,asymptomatic,128,255,<120,nomral,161,exercise indicued angina,0,upslope,1,reversible defect,>50% narrowing
+96,59,male,asymptomatic,110,239,<120,abnormal 2,142,exercise indicued angina,1.2,flat,1,reversible defect,NA
+97,60,female,asymptomatic,150,258,<120,abnormal 2,157,no exercise indicued angina,2.6,flat,2,reversible defect,NA
+98,52,male,atypical angina,134,201,<120,nomral,158,no exercise indicued angina,0.8,upslope,1,normal,<50% narrowing
+99,48,male,asymptomatic,122,222,<120,abnormal 2,186,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+100,45,male,asymptomatic,115,260,<120,abnormal 2,185,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+101,34,male,typical angina,118,182,<120,abnormal 2,174,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+102,57,female,asymptomatic,128,303,<120,abnormal 2,159,no exercise indicued angina,0,upslope,1,normal,<50% narrowing
+103,71,female,nonanginal pain,110,265,>120,abnormal 2,130,no exercise indicued angina,0,upslope,1,normal,<50% narrowing
+104,49,male,nonanginal pain,120,188,<120,nomral,139,no exercise indicued angina,2,flat,3,reversible defect,NA
+105,54,male,atypical angina,108,309,<120,nomral,156,no exercise indicued angina,0,upslope,0,reversible defect,<50% narrowing
+106,59,male,asymptomatic,140,177,<120,nomral,162,exercise indicued angina,0,upslope,1,reversible defect,NA
+107,57,male,nonanginal pain,128,229,<120,abnormal 2,150,no exercise indicued angina,0.4,flat,1,reversible defect,>50% narrowing
+108,61,male,asymptomatic,120,260,<120,nomral,140,exercise indicued angina,3.6,flat,1,reversible defect,NA
+109,39,male,asymptomatic,118,219,<120,nomral,140,no exercise indicued angina,1.2,flat,0,reversible defect,NA
+110,61,female,asymptomatic,145,307,<120,abnormal 2,146,exercise indicued angina,1,flat,0,reversible defect,>50% narrowing
+111,56,male,asymptomatic,125,249,>120,abnormal 2,144,exercise indicued angina,1.2,flat,1,normal,>50% narrowing
+112,52,male,typical angina,118,186,<120,abnormal 2,190,no exercise indicued angina,0,flat,0,fixed defect,<50% narrowing
+113,43,female,asymptomatic,132,341,>120,abnormal 2,136,exercise indicued angina,3,flat,0,reversible defect,NA
+114,62,female,nonanginal pain,130,263,<120,nomral,97,no exercise indicued angina,1.2,flat,1,reversible defect,NA
+115,41,male,atypical angina,135,203,<120,nomral,132,no exercise indicued angina,0,flat,0,fixed defect,<50% narrowing
+116,58,male,nonanginal pain,140,211,>120,abnormal 2,165,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+117,35,female,asymptomatic,138,183,<120,nomral,182,no exercise indicued angina,1.4,upslope,0,normal,<50% narrowing
+118,63,male,asymptomatic,130,330,>120,abnormal 2,132,exercise indicued angina,1.8,upslope,3,reversible defect,NA
+119,65,male,asymptomatic,135,254,<120,abnormal 2,127,no exercise indicued angina,2.8,flat,1,reversible defect,NA
+120,48,male,asymptomatic,130,256,>120,abnormal 2,150,exercise indicued angina,0,upslope,2,reversible defect,NA
+121,63,female,asymptomatic,150,407,<120,abnormal 2,154,no exercise indicued angina,4,flat,3,reversible defect,NA
+122,51,male,nonanginal pain,100,222,<120,nomral,143,exercise indicued angina,1.2,flat,0,normal,<50% narrowing
+123,55,male,asymptomatic,140,217,<120,nomral,111,exercise indicued angina,5.6,downslope,0,reversible defect,NA
+124,65,male,typical angina,138,282,>120,abnormal 2,174,no exercise indicued angina,1.4,flat,1,normal,>50% narrowing
+125,45,female,atypical angina,130,234,<120,abnormal 2,175,no exercise indicued angina,0.6,flat,0,normal,<50% narrowing
+126,56,female,asymptomatic,200,288,>120,abnormal 2,133,exercise indicued angina,4,downslope,2,reversible defect,NA
+127,54,male,asymptomatic,110,239,<120,nomral,126,exercise indicued angina,2.8,flat,1,reversible defect,NA
+128,44,male,atypical angina,120,220,<120,nomral,170,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+129,62,female,asymptomatic,124,209,<120,nomral,163,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+130,54,male,nonanginal pain,120,258,<120,abnormal 2,147,no exercise indicued angina,0.4,flat,0,reversible defect,<50% narrowing
+131,51,male,nonanginal pain,94,227,<120,nomral,154,exercise indicued angina,0,upslope,1,reversible defect,<50% narrowing
+132,29,male,atypical angina,130,204,<120,abnormal 2,202,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+133,51,male,asymptomatic,140,261,<120,abnormal 2,186,exercise indicued angina,0,upslope,0,normal,<50% narrowing
+134,43,female,nonanginal pain,122,213,<120,nomral,165,no exercise indicued angina,0.2,flat,0,normal,<50% narrowing
+135,55,female,atypical angina,135,250,<120,abnormal 2,161,no exercise indicued angina,1.4,flat,0,normal,<50% narrowing
+136,70,male,asymptomatic,145,174,<120,nomral,125,exercise indicued angina,2.6,downslope,0,reversible defect,NA
+137,62,male,atypical angina,120,281,<120,abnormal 2,103,no exercise indicued angina,1.4,flat,1,reversible defect,NA
+138,35,male,asymptomatic,120,198,<120,nomral,130,exercise indicued angina,1.6,flat,0,reversible defect,>50% narrowing
+139,51,male,nonanginal pain,125,245,>120,abnormal 2,166,no exercise indicued angina,2.4,flat,0,normal,<50% narrowing
+140,59,male,atypical angina,140,221,<120,nomral,164,exercise indicued angina,0,upslope,0,normal,<50% narrowing
+141,59,male,typical angina,170,288,<120,abnormal 2,159,no exercise indicued angina,0.2,flat,0,reversible defect,>50% narrowing
+142,52,male,atypical angina,128,205,>120,nomral,184,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+143,64,male,nonanginal pain,125,309,<120,nomral,131,exercise indicued angina,1.8,flat,0,reversible defect,>50% narrowing
+144,58,male,nonanginal pain,105,240,<120,abnormal 2,154,exercise indicued angina,0.6,flat,0,reversible defect,<50% narrowing
+145,47,male,nonanginal pain,108,243,<120,nomral,152,no exercise indicued angina,0,upslope,0,normal,>50% narrowing
+146,57,male,asymptomatic,165,289,>120,abnormal 2,124,no exercise indicued angina,1,flat,3,reversible defect,NA
+147,41,male,nonanginal pain,112,250,<120,nomral,179,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+148,45,male,atypical angina,128,308,<120,abnormal 2,170,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+149,60,female,nonanginal pain,102,318,<120,nomral,160,no exercise indicued angina,0,upslope,1,normal,<50% narrowing
+150,52,male,typical angina,152,298,>120,nomral,178,no exercise indicued angina,1.2,flat,0,reversible defect,<50% narrowing
+151,42,female,asymptomatic,102,265,<120,abnormal 2,122,no exercise indicued angina,0.6,flat,0,normal,<50% narrowing
+152,67,female,nonanginal pain,115,564,<120,abnormal 2,160,no exercise indicued angina,1.6,flat,0,reversible defect,<50% narrowing
+153,55,male,asymptomatic,160,289,<120,abnormal 2,145,exercise indicued angina,0.8,flat,1,reversible defect,NA
+154,64,male,asymptomatic,120,246,<120,abnormal 2,96,exercise indicued angina,2.2,downslope,1,normal,NA
+155,70,male,asymptomatic,130,322,<120,abnormal 2,109,no exercise indicued angina,2.4,flat,3,normal,>50% narrowing
+156,51,male,asymptomatic,140,299,<120,nomral,173,exercise indicued angina,1.6,upslope,0,reversible defect,>50% narrowing
+157,58,male,asymptomatic,125,300,<120,abnormal 2,171,no exercise indicued angina,0,upslope,2,reversible defect,>50% narrowing
+158,60,male,asymptomatic,140,293,<120,abnormal 2,170,no exercise indicued angina,1.2,flat,2,reversible defect,NA
+159,68,male,nonanginal pain,118,277,<120,nomral,151,no exercise indicued angina,1,upslope,1,reversible defect,<50% narrowing
+160,46,male,atypical angina,101,197,>120,nomral,156,no exercise indicued angina,0,upslope,0,reversible defect,<50% narrowing
+161,77,male,asymptomatic,125,304,<120,abnormal 2,162,exercise indicued angina,0,upslope,3,normal,NA
+162,54,female,nonanginal pain,110,214,<120,nomral,158,no exercise indicued angina,1.6,flat,0,normal,<50% narrowing
+163,58,female,asymptomatic,100,248,<120,abnormal 2,122,no exercise indicued angina,1,flat,0,normal,<50% narrowing
+164,48,male,nonanginal pain,124,255,>120,nomral,175,no exercise indicued angina,0,upslope,2,normal,<50% narrowing
+165,57,male,asymptomatic,132,207,<120,nomral,168,exercise indicued angina,0,upslope,0,reversible defect,<50% narrowing
+166,52,male,nonanginal pain,138,223,<120,nomral,169,no exercise indicued angina,0,upslope,?,normal,<50% narrowing
+167,54,female,atypical angina,132,288,>120,abnormal 2,159,exercise indicued angina,0,upslope,1,normal,<50% narrowing
+168,35,male,asymptomatic,126,282,<120,abnormal 2,156,exercise indicued angina,0,upslope,0,reversible defect,>50% narrowing
+169,45,female,atypical angina,112,160,<120,nomral,138,no exercise indicued angina,0,flat,0,normal,<50% narrowing
+170,70,male,nonanginal pain,160,269,<120,nomral,112,exercise indicued angina,2.9,flat,1,reversible defect,NA
+171,53,male,asymptomatic,142,226,<120,abnormal 2,111,exercise indicued angina,0,upslope,0,reversible defect,<50% narrowing
+172,59,female,asymptomatic,174,249,<120,nomral,143,exercise indicued angina,0,flat,0,normal,>50% narrowing
+173,62,female,asymptomatic,140,394,<120,abnormal 2,157,no exercise indicued angina,1.2,flat,0,normal,<50% narrowing
+174,64,male,asymptomatic,145,212,<120,abnormal 2,132,no exercise indicued angina,2,flat,2,fixed defect,NA
+175,57,male,asymptomatic,152,274,<120,nomral,88,exercise indicued angina,1.2,flat,1,reversible defect,>50% narrowing
+176,52,male,asymptomatic,108,233,>120,nomral,147,no exercise indicued angina,0.1,upslope,3,reversible defect,<50% narrowing
+177,56,male,asymptomatic,132,184,<120,abnormal 2,105,exercise indicued angina,2.1,flat,1,fixed defect,>50% narrowing
+178,43,male,nonanginal pain,130,315,<120,nomral,162,no exercise indicued angina,1.9,upslope,1,normal,<50% narrowing
+179,53,male,nonanginal pain,130,246,>120,abnormal 2,173,no exercise indicued angina,0,upslope,3,normal,<50% narrowing
+180,48,male,asymptomatic,124,274,<120,abnormal 2,166,no exercise indicued angina,0.5,flat,0,reversible defect,NA
+181,56,female,asymptomatic,134,409,<120,abnormal 2,150,exercise indicued angina,1.9,flat,2,reversible defect,NA
+182,42,male,typical angina,148,244,<120,abnormal 2,178,no exercise indicued angina,0.8,upslope,2,normal,<50% narrowing
+183,59,male,typical angina,178,270,<120,abnormal 2,145,no exercise indicued angina,4.2,downslope,0,reversible defect,<50% narrowing
+184,60,female,asymptomatic,158,305,<120,abnormal 2,161,no exercise indicued angina,0,upslope,0,normal,>50% narrowing
+185,63,female,atypical angina,140,195,<120,nomral,179,no exercise indicued angina,0,upslope,2,normal,<50% narrowing
+186,42,male,nonanginal pain,120,240,>120,nomral,194,no exercise indicued angina,0.8,downslope,0,reversible defect,<50% narrowing
+187,66,male,atypical angina,160,246,<120,nomral,120,exercise indicued angina,0,flat,3,fixed defect,NA
+188,54,male,atypical angina,192,283,<120,abnormal 2,195,no exercise indicued angina,0,upslope,1,reversible defect,>50% narrowing
+189,69,male,nonanginal pain,140,254,<120,abnormal 2,146,no exercise indicued angina,2,flat,3,reversible defect,NA
+190,50,male,nonanginal pain,129,196,<120,nomral,163,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+191,51,male,asymptomatic,140,298,<120,nomral,122,exercise indicued angina,4.2,flat,3,reversible defect,NA
+192,43,male,asymptomatic,132,247,>120,abnormal 2,143,exercise indicued angina,0.1,flat,?,reversible defect,>50% narrowing
+193,62,female,asymptomatic,138,294,>120,nomral,106,no exercise indicued angina,1.9,flat,3,normal,NA
+194,68,female,nonanginal pain,120,211,<120,abnormal 2,115,no exercise indicued angina,1.5,flat,0,normal,<50% narrowing
+195,67,male,asymptomatic,100,299,<120,abnormal 2,125,exercise indicued angina,0.9,flat,2,normal,NA
+196,69,male,typical angina,160,234,>120,abnormal 2,131,no exercise indicued angina,0.1,flat,1,normal,<50% narrowing
+197,45,female,asymptomatic,138,236,<120,abnormal 2,152,exercise indicued angina,0.2,flat,0,normal,<50% narrowing
+198,50,female,atypical angina,120,244,<120,nomral,162,no exercise indicued angina,1.1,upslope,0,normal,<50% narrowing
+199,59,male,typical angina,160,273,<120,abnormal 2,125,no exercise indicued angina,0,upslope,0,normal,>50% narrowing
+200,50,female,asymptomatic,110,254,<120,abnormal 2,159,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+201,64,female,asymptomatic,180,325,<120,nomral,154,exercise indicued angina,0,upslope,0,normal,<50% narrowing
+202,57,male,nonanginal pain,150,126,>120,nomral,173,no exercise indicued angina,0.2,upslope,1,reversible defect,<50% narrowing
+203,64,female,nonanginal pain,140,313,<120,nomral,133,no exercise indicued angina,0.2,upslope,0,reversible defect,<50% narrowing
+204,43,male,asymptomatic,110,211,<120,nomral,161,no exercise indicued angina,0,upslope,0,reversible defect,<50% narrowing
+205,45,male,asymptomatic,142,309,<120,abnormal 2,147,exercise indicued angina,0,flat,3,reversible defect,NA
+206,58,male,asymptomatic,128,259,<120,abnormal 2,130,exercise indicued angina,3,flat,2,reversible defect,NA
+207,50,male,asymptomatic,144,200,<120,abnormal 2,126,exercise indicued angina,0.9,flat,0,reversible defect,NA
+208,55,male,atypical angina,130,262,<120,nomral,155,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+209,62,female,asymptomatic,150,244,<120,nomral,154,exercise indicued angina,1.4,flat,0,normal,>50% narrowing
+210,37,female,nonanginal pain,120,215,<120,nomral,170,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+211,38,male,typical angina,120,231,<120,nomral,182,exercise indicued angina,3.8,flat,0,reversible defect,NA
+212,41,male,nonanginal pain,130,214,<120,abnormal 2,168,no exercise indicued angina,2,flat,0,normal,<50% narrowing
+213,66,female,asymptomatic,178,228,>120,nomral,165,exercise indicued angina,1,flat,2,reversible defect,NA
+214,52,male,asymptomatic,112,230,<120,nomral,160,no exercise indicued angina,0,upslope,1,normal,>50% narrowing
+215,56,male,typical angina,120,193,<120,abnormal 2,162,no exercise indicued angina,1.9,flat,0,reversible defect,<50% narrowing
+216,46,female,atypical angina,105,204,<120,nomral,172,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+217,46,female,asymptomatic,138,243,<120,abnormal 2,152,exercise indicued angina,0,flat,0,normal,<50% narrowing
+218,64,female,asymptomatic,130,303,<120,nomral,122,no exercise indicued angina,2,flat,2,normal,<50% narrowing
+219,59,male,asymptomatic,138,271,<120,abnormal 2,182,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+220,41,female,nonanginal pain,112,268,<120,abnormal 2,172,exercise indicued angina,0,upslope,0,normal,<50% narrowing
+221,54,female,nonanginal pain,108,267,<120,abnormal 2,167,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+222,39,female,nonanginal pain,94,199,<120,nomral,179,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+223,53,male,asymptomatic,123,282,<120,nomral,95,exercise indicued angina,2,flat,2,reversible defect,NA
+224,63,female,asymptomatic,108,269,<120,nomral,169,exercise indicued angina,1.8,flat,2,normal,>50% narrowing
+225,34,female,atypical angina,118,210,<120,nomral,192,no exercise indicued angina,0.7,upslope,0,normal,<50% narrowing
+226,47,male,asymptomatic,112,204,<120,nomral,143,no exercise indicued angina,0.1,upslope,0,normal,<50% narrowing
+227,67,female,nonanginal pain,152,277,<120,nomral,172,no exercise indicued angina,0,upslope,1,normal,<50% narrowing
+228,54,male,asymptomatic,110,206,<120,abnormal 2,108,exercise indicued angina,0,flat,1,normal,NA
+229,66,male,asymptomatic,112,212,<120,abnormal 2,132,exercise indicued angina,0.1,upslope,1,normal,NA
+230,52,female,nonanginal pain,136,196,<120,abnormal 2,169,no exercise indicued angina,0.1,flat,0,normal,<50% narrowing
+231,55,female,asymptomatic,180,327,<120,abnormal 1,117,exercise indicued angina,3.4,flat,0,normal,NA
+232,49,male,nonanginal pain,118,149,<120,abnormal 2,126,no exercise indicued angina,0.8,upslope,3,normal,>50% narrowing
+233,74,female,atypical angina,120,269,<120,abnormal 2,121,exercise indicued angina,0.2,upslope,1,normal,<50% narrowing
+234,54,female,nonanginal pain,160,201,<120,nomral,163,no exercise indicued angina,0,upslope,1,normal,<50% narrowing
+235,54,male,asymptomatic,122,286,<120,abnormal 2,116,exercise indicued angina,3.2,flat,2,normal,NA
+236,56,male,asymptomatic,130,283,>120,abnormal 2,103,exercise indicued angina,1.6,downslope,0,reversible defect,NA
+237,46,male,asymptomatic,120,249,<120,abnormal 2,144,no exercise indicued angina,0.8,upslope,0,reversible defect,>50% narrowing
+238,49,female,atypical angina,134,271,<120,nomral,162,no exercise indicued angina,0,flat,0,normal,<50% narrowing
+239,42,male,atypical angina,120,295,<120,nomral,162,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+240,41,male,atypical angina,110,235,<120,nomral,153,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+241,41,female,atypical angina,126,306,<120,nomral,163,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+242,49,female,asymptomatic,130,269,<120,nomral,163,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+243,61,male,typical angina,134,234,<120,nomral,145,no exercise indicued angina,2.6,flat,2,normal,NA
+244,60,female,nonanginal pain,120,178,>120,nomral,96,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+245,67,male,asymptomatic,120,237,<120,nomral,71,no exercise indicued angina,1,flat,0,normal,NA
+246,58,male,asymptomatic,100,234,<120,nomral,156,no exercise indicued angina,0.1,upslope,1,reversible defect,NA
+247,47,male,asymptomatic,110,275,<120,abnormal 2,118,exercise indicued angina,1,flat,1,normal,>50% narrowing
+248,52,male,asymptomatic,125,212,<120,nomral,168,no exercise indicued angina,1,upslope,2,reversible defect,NA
+249,62,male,atypical angina,128,208,>120,abnormal 2,140,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+250,57,male,asymptomatic,110,201,<120,nomral,126,exercise indicued angina,1.5,flat,0,fixed defect,<50% narrowing
+251,58,male,asymptomatic,146,218,<120,nomral,105,no exercise indicued angina,2,flat,1,reversible defect,>50% narrowing
+252,64,male,asymptomatic,128,263,<120,nomral,105,exercise indicued angina,0.2,flat,1,reversible defect,<50% narrowing
+253,51,female,nonanginal pain,120,295,<120,abnormal 2,157,no exercise indicued angina,0.6,upslope,0,normal,<50% narrowing
+254,43,male,asymptomatic,115,303,<120,nomral,181,no exercise indicued angina,1.2,flat,0,normal,<50% narrowing
+255,42,female,nonanginal pain,120,209,<120,nomral,173,no exercise indicued angina,0,flat,0,normal,<50% narrowing
+256,67,female,asymptomatic,106,223,<120,nomral,142,no exercise indicued angina,0.3,upslope,2,normal,<50% narrowing
+257,76,female,nonanginal pain,140,197,<120,abnormal 1,116,no exercise indicued angina,1.1,flat,0,normal,<50% narrowing
+258,70,male,atypical angina,156,245,<120,abnormal 2,143,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+259,57,male,atypical angina,124,261,<120,nomral,141,no exercise indicued angina,0.3,upslope,0,reversible defect,>50% narrowing
+260,44,female,nonanginal pain,118,242,<120,nomral,149,no exercise indicued angina,0.3,flat,1,normal,<50% narrowing
+261,58,female,atypical angina,136,319,>120,abnormal 2,152,no exercise indicued angina,0,upslope,2,normal,NA
+262,60,female,typical angina,150,240,<120,nomral,171,no exercise indicued angina,0.9,upslope,0,normal,<50% narrowing
+263,44,male,nonanginal pain,120,226,<120,nomral,169,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+264,61,male,asymptomatic,138,166,<120,abnormal 2,125,exercise indicued angina,3.6,flat,1,normal,NA
+265,42,male,asymptomatic,136,315,<120,nomral,125,exercise indicued angina,1.8,flat,0,fixed defect,NA
+266,52,male,asymptomatic,128,204,>120,nomral,156,exercise indicued angina,1,flat,0,?,NA
+267,59,male,nonanginal pain,126,218,>120,nomral,134,no exercise indicued angina,2.2,flat,1,fixed defect,NA
+268,40,male,asymptomatic,152,223,<120,nomral,181,no exercise indicued angina,0,upslope,0,reversible defect,>50% narrowing
+269,42,male,nonanginal pain,130,180,<120,nomral,150,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+270,61,male,asymptomatic,140,207,<120,abnormal 2,138,exercise indicued angina,1.9,upslope,1,reversible defect,>50% narrowing
+271,66,male,asymptomatic,160,228,<120,abnormal 2,138,no exercise indicued angina,2.3,upslope,0,fixed defect,<50% narrowing
+272,46,male,asymptomatic,140,311,<120,nomral,120,exercise indicued angina,1.8,flat,2,reversible defect,NA
+273,71,female,asymptomatic,112,149,<120,nomral,125,no exercise indicued angina,1.6,flat,0,normal,<50% narrowing
+274,59,male,typical angina,134,204,<120,nomral,162,no exercise indicued angina,0.8,upslope,2,normal,>50% narrowing
+275,64,male,typical angina,170,227,<120,abnormal 2,155,no exercise indicued angina,0.6,flat,0,reversible defect,<50% narrowing
+276,66,female,nonanginal pain,146,278,<120,abnormal 2,152,no exercise indicued angina,0,flat,1,normal,<50% narrowing
+277,39,female,nonanginal pain,138,220,<120,nomral,152,no exercise indicued angina,0,flat,0,normal,<50% narrowing
+278,57,male,atypical angina,154,232,<120,abnormal 2,164,no exercise indicued angina,0,upslope,1,normal,>50% narrowing
+279,58,female,asymptomatic,130,197,<120,nomral,131,no exercise indicued angina,0.6,flat,0,normal,<50% narrowing
+280,57,male,asymptomatic,110,335,<120,nomral,143,exercise indicued angina,3,flat,1,reversible defect,NA
+281,47,male,nonanginal pain,130,253,<120,nomral,179,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+282,55,female,asymptomatic,128,205,<120,abnormal 1,130,exercise indicued angina,2,flat,1,reversible defect,NA
+283,35,male,atypical angina,122,192,<120,nomral,174,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+284,61,male,asymptomatic,148,203,<120,nomral,161,no exercise indicued angina,0,upslope,1,reversible defect,NA
+285,58,male,asymptomatic,114,318,<120,abnormal 1,140,no exercise indicued angina,4.4,downslope,3,fixed defect,NA
+286,58,female,asymptomatic,170,225,>120,abnormal 2,146,exercise indicued angina,2.8,flat,2,fixed defect,NA
+287,58,male,atypical angina,125,220,<120,nomral,144,no exercise indicued angina,0.4,flat,?,reversible defect,<50% narrowing
+288,56,male,atypical angina,130,221,<120,abnormal 2,163,no exercise indicued angina,0,upslope,0,reversible defect,<50% narrowing
+289,56,male,atypical angina,120,240,<120,nomral,169,no exercise indicued angina,0,downslope,0,normal,<50% narrowing
+290,67,male,nonanginal pain,152,212,<120,abnormal 2,150,no exercise indicued angina,0.8,flat,0,reversible defect,>50% narrowing
+291,55,female,atypical angina,132,342,<120,nomral,166,no exercise indicued angina,1.2,upslope,0,normal,<50% narrowing
+292,44,male,asymptomatic,120,169,<120,nomral,144,exercise indicued angina,2.8,downslope,0,fixed defect,NA
+293,63,male,asymptomatic,140,187,<120,abnormal 2,144,exercise indicued angina,4,upslope,2,reversible defect,NA
+294,63,female,asymptomatic,124,197,<120,nomral,136,exercise indicued angina,0,flat,0,normal,>50% narrowing
+295,41,male,atypical angina,120,157,<120,nomral,182,no exercise indicued angina,0,upslope,0,normal,<50% narrowing
+296,59,male,asymptomatic,164,176,>120,abnormal 2,90,no exercise indicued angina,1,flat,2,fixed defect,NA
+297,57,female,asymptomatic,140,241,<120,nomral,123,exercise indicued angina,0.2,flat,0,reversible defect,>50% narrowing
+298,45,male,typical angina,110,264,<120,nomral,132,no exercise indicued angina,1.2,flat,0,reversible defect,>50% narrowing
+299,68,male,asymptomatic,144,193,>120,nomral,141,no exercise indicued angina,3.4,flat,2,reversible defect,NA
+300,57,male,asymptomatic,130,131,<120,nomral,115,exercise indicued angina,1.2,flat,1,reversible defect,NA
+301,57,female,atypical angina,130,236,<120,abnormal 2,174,no exercise indicued angina,0,flat,1,normal,>50% narrowing
+302,38,male,nonanginal pain,138,175,<120,nomral,173,no exercise indicued angina,0,upslope,?,normal,<50% narrowing

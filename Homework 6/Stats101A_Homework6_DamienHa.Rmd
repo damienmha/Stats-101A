@@ -1,0 +1,123 @@
+---
+title: 'Stats 101A Homework #6'
+author: "Damien Ha"
+date: "2023-03-08"
+output: pdf_document
+---
+
+# Problem 1
+
+```{r}
+cleveland <- read.csv("Cleveland_Data.csv")
+```
+
+
+## Part A
+
+```{r}
+cleveland$exand = as.factor(cleveland$exand)
+cleveland$exand = -as.numeric(cleveland$exand)+2
+m1 <- glm(cleveland$exand ~ cleveland$maxheartrate, family=binomial) 
+summary(m1)
+```
+
+## Part B
+
+$H_0$: There is not a significant relationship between heart rate and the probability of exand
+
+$H_A$: There is a significant relationship between heart rate and the probability of exand
+
+## Part C
+
+```{r}
+library(aod)
+wald.test(vcov(m1), coef(m1), 2)
+```
+
+The p-value is 0.00000001 which is significant at a level of $\alpha = 0.05$ because 0.00000001 < 0.05. There is then sufficient evidence to reject the null hypothesis and conclude that there exists a significant relationship between heart rate and probability of exand.
+
+## Part D
+
+```{r}
+plot(cleveland$maxheartrate, cleveland$exand, pch = 19, 
+     xlab = "Max Heart Rate", ylab = "exand")
+x <- seq(70,205,0.5)
+y <- 1/(1+exp(-1*(m1$coeff[1] + m1$coeff[2]*x))) 
+lines(x,y)
+```
+
+
+## Part E
+
+```{r}
+
+(1/(1 + exp(-1 * (m1$coeff[1] + m1$coeff[2]*5)))) - 
+  (1/(1 + exp(-1*(m1$coeff[1] + m1$coeff[2]*0))))
+```
+
+So on average, with an increase of 5 in max heart rate, we would have a 0.155% decrease in exand
+
+## Part F
+
+```{r}
+pchisq(m1$null.deviance - m1$deviance,1,lower=FALSE)
+```
+
+
+## Part G
+
+```{r}
+1 - m1$deviance/m1$null.deviance
+```
+
+The $R^2$ value is 0.116 which suggests that 11.6% of the deviance is explained by the model. This is a fairly low percentage and suggest that there could be a better fit of model to the data.
+
+
+# Problem 2
+
+Exercise 8.3.1
+
+```{r}
+playoffs <- read.table("playoffs.txt", header = T)
+```
+
+```{r}
+plot(x = playoffs$Population, y = playoffs$PlayoffAppearances, pch = 19, 
+xlab = "x, Population (in millions)", ylab = "Y, Play off Appearances (in 10 seasons")
+```
+
+```{r}
+m2 <- lm(PlayoffAppearances ~ Population, data = playoffs)
+summary(m2)
+par(mfrow = c(2, 2))
+plot(m2)
+```
+
+## Part A
+
+One major concern is correlation. The regression analysis shows there may be a positive linear trend between population and playoff appearances, but it is a weak correlation. It's possible outside factors play a role in playoff appearances, and these other variables must be taken into account. Another major concern is sample size. The sample size of 30 is not particularly large, so it may not be generalizable to all baseball teams or sports.
+
+
+## Part B
+
+```{r}
+m3 <- glm(cbind(playoffs$PlayoffAppearances, playoffs$n - playoffs$PlayoffAppearances) 
+          ~ playoffs$Population, family = "binomial")
+summary(m3)
+```
+
+```{r}
+x <- seq(0,20,0.5)
+y <- 1/(1+exp(-1*(m3$coeff[1] + m3$coeff[2]*x))) 
+
+x <- seq(-100,100,0.5)
+y <- 1/(1+exp(-1*(m3$coeff[1] + m3$coeff[2]*x))) 
+plot(x,y)
+```
+
+```{r}
+wald.test(vcov(m3), coef(m3), 2)
+```
+
+The wald test gives a p-value of 0.0045. At a level of $\alpha = 0.05$, this is significant as 0.0045 < 0.05. There is evidence to reject the null hypothesis and conclude there is a significant relationship between population and playoff appearances
+
